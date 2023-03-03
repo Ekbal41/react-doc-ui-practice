@@ -42,7 +42,7 @@
 .c-btn{
   border: none;
   background-color: white;
-  font-size: 30px;
+  font-size: 25px;
   display: none;
 }
 
@@ -50,8 +50,34 @@
   display: block;
 }
 
+.p-title{
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.line{
+  line-height: 15px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 500;
+}
 
-@media screen and (max-width: 768px){
+.black{
+  color: #30363d;
+  font-weight: 600;
+}
+.small{
+  font-size: 15px;
+}
+p{
+  font-size: 15px;
+}
+body{
+  min-width: 100%;
+}
+
+
+@media screen and (max-width: 500px){
  
   .rightCol{
     margin-left: 0;

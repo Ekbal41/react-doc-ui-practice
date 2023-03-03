@@ -1,4 +1,5 @@
 import React from "react";
+import Print from "./Print";
 
 function Starting() {
   return (
@@ -15,7 +16,7 @@ function Starting() {
               </li>
             </ol>
           </nav>
-          <h6 className="fw-bold mt-5">Welcome</h6>
+          <h4 className="fw-bold mt-5 black">Welcome</h4>
           <p className="mt-3">
             Follow these 6 steps and you’ll get your Help Scout account up and
             running in no time. If you'd like to get a full tour of Help Scout
@@ -144,7 +145,7 @@ function Starting() {
               </div>
             </div>
           </div>
-          <div className="mt-5 d-flex justify-content-between border rounded p-3 pt-4">
+          <div className="mt-5 d-flex flex-column flex-md-row justify-content-between border rounded p-3 pt-4">
             <div>
               <p>Updated on Feb 3, 2023</p>
             </div>
@@ -154,6 +155,7 @@ function Starting() {
                 <img
                   style={{
                     height: 20,
+                    width: 50,
                     marginLeft: 10,
                   }}
                   src="/imoji.svg"
@@ -170,40 +172,12 @@ function Starting() {
             <p> • Account Settings. </p>
           </div>
         </div>
-        <div className="col-12 col-md-3 mt-5 mt-md-0">
-          <h6 className="text-uppercase text-gray">
-            <img
-              style={{
-                height: 30,
-                marginRight: 10,
-              }}
-              src="/print.svg"
-            />
-            print
-          </h6>
 
-          <div className="mt-4">
-            <h6 className="text-uppercase text-gray">
-              <img
-                style={{
-                  height: 30,
-                  marginRight: 10,
-                }}
-                src="/menu.svg"
-              />
-              Contants
-            </h6>
-            <div className="border-start border-3 " style={{
-                paddingLeft: 20,
-                fontSize: 13,
-            }}>
-                <p className="fw-bold text-gray">Parent Theme Installation</p>
-                <p className="fw-bold text-gray">Child Theme Installation</p>
-                <p className="fw-bold text-gray">Bundled Plugins</p>
-                <p className="fw-bold text-gray">Recommended 3rd Party Plugins</p>
-            </div>
-          </div>
+        <div className="col-12 col-md-3 mt-5 mt-md-0">
+          <Print />
         </div>
+
+        
       </div>
     </>
   );
